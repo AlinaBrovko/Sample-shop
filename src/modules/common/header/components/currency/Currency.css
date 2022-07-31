@@ -1,0 +1,54 @@
+.currency {
+    display: flex;
+    position: relative;
+}
+
+.currency button {
+    border: 0;
+    background: #fff;
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+}
+
+.currency button:hover {
+    cursor: pointer;
+}
+
+.currency button::after {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    content: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5L4 0.5L7 3.5' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+}
+
+.currency button.expanded::after {
+    content: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.5L4 3.5L7 0.5' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+}
+
+.currency ul.options {
+    display: none;
+    list-style: none;
+    padding: 4px 0;
+    margin-top: -4px;
+    width: 114px;
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+
+.currency ul.show {
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: -40px;
+}
+
+.currency ul.options li {
+    text-align: center;
+    line-height: 45px;
+}
+
+.currency ul.options li:active,
+.currency ul.options li:focus,
+.currency ul.options li:hover {
+    background: #eee;
+    cursor: pointer;
+}

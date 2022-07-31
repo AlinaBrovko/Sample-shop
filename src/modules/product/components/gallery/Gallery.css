@@ -1,0 +1,35 @@
+.gallery {
+    max-width: 100%;
+    position: relative;
+}
+
+.gallery img {
+    max-width: 100%;
+}
+
+.gallery .img-large {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 70%;
+
+}
+
+.gallery .img-thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+    width: 80px;
+}
+
+.gallery .gallery-selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gallery .gallery-selector:checked+.img-large {
+    opacity: 1;
+}

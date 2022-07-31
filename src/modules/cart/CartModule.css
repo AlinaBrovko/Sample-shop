@@ -1,0 +1,124 @@
+.cart {
+    margin: 80px 100px;
+}
+
+.cart-item {
+    padding: 24px 0;
+}
+
+.cart-item {
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.cart-product-wrapper {
+    width: 70%;
+}
+
+.cart-count-wrapper {
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 24px;
+}
+
+.cart-gallery-wrapper {
+    width: 25%;
+}
+
+.cart-product h3 {
+    margin: 8px 0;
+    height: 18px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.brand-cart {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.name-cart {
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 16px;
+}
+
+.cart h1 {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #E5E5E5;
+    margin: 0;
+}
+
+.order-button {
+    width: 279px;
+    height: 43px;
+    background: #5ECE7B;
+    order: 1;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 43px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+.cart .attribute .tile {
+    margin: 0 8px 8px 0;
+}
+
+.cart-item-action {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #1D1F22;
+    line-height: 45px;
+    font-size: 32px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.cart-gallery-wrapper div img{
+    width: 100%;
+}
+
+.cart-gallery-wrapper div {
+    position: relative;
+}
+
+.cart-gallery-wrapper .action {
+    height: 24px;
+    width: 24px;
+    background: rgba(0, 0, 0, 0.73);
+    text-align: center;
+    line-height: 24px;
+    color: #FFF;
+    font-size: 24px;
+    padding-bottom: 4px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+}
+
+.cart-gallery-wrapper .action.next {
+    bottom: 16px;
+    right: 16px;
+}
+
+.cart-gallery-wrapper .action.prev {
+    bottom: 16px;
+    right: 48px;
+}
+
+span.price {
+    font-weight: 700;
+}

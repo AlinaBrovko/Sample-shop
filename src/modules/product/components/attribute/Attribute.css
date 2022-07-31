@@ -1,0 +1,49 @@
+.attribute {
+    display: inline-block;
+
+}
+
+.attribute input {
+    display: none;
+}
+
+.attribute .swatch {
+    height: 32px;
+    width: 32px;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.attribute-radio:checked+.swatch,
+.swatch.selected {
+    outline: 1px solid #5ECE7B;
+    padding: 1px;
+}
+
+.attribute .tile {
+    height: 43px;
+    width: 61px;
+    margin: 8px 12px 0 0;
+    text-align: center;
+    line-height: 43px;
+    border: 1px solid #1D1F22;
+    cursor: pointer;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+
+.attribute .tile p {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.attribute-radio:checked+.tile,
+.tile.selected {
+    background-color: #1D1F22;
+    color: #fff;
+}
