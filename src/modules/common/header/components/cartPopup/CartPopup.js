@@ -22,6 +22,7 @@ class CartPopup extends Component {
         !this.wrapperRef.current.contains(e.target)
       ) {
         this.setState({ show: false });
+        document.body.classList.remove("no-scroll")
       }
     });
   }
@@ -44,6 +45,7 @@ class CartPopup extends Component {
           className="cart-icon"
           onClick={() => {
             this.setState({ show: !this.state.show });
+            document.body.classList.toggle("no-scroll")
           }}
         >
           <img src="/images/cart.svg" alt="cart" />

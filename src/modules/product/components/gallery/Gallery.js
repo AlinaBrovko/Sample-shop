@@ -2,30 +2,36 @@ import { Component } from "react";
 import "./Gallery.css";
 
 export default class Gallery extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { index: 0 };
+  }
   render() {
     return (
       <div className="gallery">
-        {this.props.images.map((image, index) => {
-          return (
-            <div className="gallery-item" key={index}>
-              <input
-                type="radio"
-                defaultChecked={index === 0}
-                name="gallery"
-                id={"img" + index}
-                className="gallery-selector"
-              />
-              <img
-                className="img-large"
-                src={image}
-                alt={"product large " + index}
-              />
-              <label htmlFor={"img" + index} className="img-thumb">
+        <div className="gallery-items">
+          {this.props.images.map((image, index) => {
+            return (
+              <div
+                className="img-thumb"
+                key={index}
+                onClick={() => {
+                  this.setState({ index: index });
+                }}
+              >
                 <img src={image} alt={"product thumb " + index} />
-              </label>
-            </div>
-          );
-        })}
+              </div>
+            );
+          })}
+        </div>
+        <div className="product-photo">
+          {this.props.inStock ? "" : <div className="out-of-stock">out of stock</div>}
+          <img
+            src={this.props.images[this.state.index]}
+            alt="main"
+            className="img-large"
+          />
+        </div>
       </div>
     );
   }

@@ -21,6 +21,7 @@ export default class CategoryModule extends Component {
     return (
       <div className="category">
         <h2 className="category-name">{this.state.name}</h2>
+        <div className="category-products">
         {this.state.products.map((product, index) => {
           return (
             <ProductTile
@@ -29,6 +30,7 @@ export default class CategoryModule extends Component {
             />
           );
         })}
+        </div>
       </div>
     );
   }

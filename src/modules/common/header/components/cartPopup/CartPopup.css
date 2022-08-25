@@ -38,6 +38,10 @@
     overflow: scroll;
 }
 
+.cart-popup-body::-webkit-scrollbar {
+    width: 2px;
+}
+
 .cart-popup .cart-popup-body .cart-product-wrapper {
     width: 140px;
     padding-right: 4px;

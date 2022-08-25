@@ -31,7 +31,7 @@ export default class Attribute extends Component {
                       }}
                     ></div>
                   ) : (
-                    <div className="tile"><p>{item.displayValue}</p></div>
+                    <div className="tile"><p>{item.value}</p></div>
                   )}
                 </label>
               </div>

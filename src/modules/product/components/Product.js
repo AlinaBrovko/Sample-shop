@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Markup } from "interweave";
 import Attribute from "./attribute/Attribute";
 import Gallery from "./gallery/Gallery";
 import { connect } from "react-redux";
@@ -21,7 +22,7 @@ class Product extends Component {
 
     this.props.addProduct({
       ...this.props.product,
-      selectedAttributes: {...this.selectedAttributes},
+      selectedAttributes: { ...this.selectedAttributes },
     });
   }
   changeProductAttribute(name, value) {
@@ -37,7 +38,10 @@ class Product extends Component {
     return (
       <div className="product-page">
         <div className="gallery-wrapper">
-          <Gallery images={this.props.product.gallery} />
+          <Gallery
+            images={this.props.product.gallery}
+            inStock={this.props.product.inStock}
+          />
         </div>
         <div className="product-wrapper">
           <div className="product-brand">{this.props.product.brand}</div>
@@ -65,12 +69,9 @@ class Product extends Component {
           >
             Add to cart
           </div>
-          <div
-            className="description"
-            dangerouslySetInnerHTML={{
-              __html: this.props.product.description,
-            }}
-          ></div>
+          <div className="description">
+            <Markup content={this.props.product.description} />
+          </div>
         </div>
       </div>
     );
