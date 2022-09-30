@@ -2,6 +2,7 @@
   "name": "sample-shop",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@craco/craco": "^6.4.5",
     "@testing-library/jest-dom": "^5.16.4",
@@ -19,7 +20,7 @@
   },
   "scripts": {
     "start": "cross-env PUBLIC_URL=/ craco start",
-    "build": "craco build",
+    "build": "rimraf build && craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },

@@ -11,7 +11,7 @@ export default class Header extends Component {
       <div className="header">
         <Menu />
         <Link to="/">
-          <img src="/images/logo.svg" alt="logo" />{" "}
+          <img src="./images/logo.svg" alt="logo" />{" "}
         </Link>
         <div className="actions">
           <Currency />

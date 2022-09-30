@@ -48,7 +48,7 @@ class CartPopup extends Component {
             document.body.classList.toggle("no-scroll")
           }}
         >
-          <img src="/images/cart.svg" alt="cart" />
+          <img src="./images/cart.svg" alt="cart" />
           {this.props.cart.total ? <span>{this.props.cart.total}</span> : ""}
         </div>
         {this.state.show ? (
