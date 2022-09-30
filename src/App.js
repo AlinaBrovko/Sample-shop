@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useParams } from "react-router-dom";
 import CategoryModule from "./modules/category/CategoryModule";
 import CartModule from "./modules/cart/CartModule";
 import ProductsModule from "./modules/product/ProductsModule";
