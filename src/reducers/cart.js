@@ -1,6 +1,6 @@
 import { ADD_PRODUCT, INCREMENT_PRODUCT, DECREMENT_PRODUCT } from "../actions/cartActions";
 
-const STORAGE_KEY = "scandiweb-cart";
+const STORAGE_KEY = "shop-cart";
 const storageData = localStorage.getItem(STORAGE_KEY);
 const defaultState = storageData ? JSON.parse(storageData) : [];
 const total = defaultState.reduce((sum, product) => product.qty + sum, 0);

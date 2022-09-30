@@ -1,4 +1,4 @@
-# Scandiweb Junior Developer test
+# Sample shop
 #### Install dependencies:
 ```
 npm install
@@ -7,3 +7,6 @@ npm install
 ```
 npm run start
 ```
+
+#### Backend
+https://github.com/AlinaBrovko/Sample-shop-GraphQL

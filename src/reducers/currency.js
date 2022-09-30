@@ -1,6 +1,6 @@
 import { CHANGE_CURRENCY } from "../actions/currencyActions";
 
-const STORAGE_KEY = "scandiweb-currency";
+const STORAGE_KEY = "shop-currency";
 const storageData = localStorage.getItem(STORAGE_KEY);
 const defaultState = storageData ? JSON.parse(storageData) : {label: "", symbol: ""};
 
